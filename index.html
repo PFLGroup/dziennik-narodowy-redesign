@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dziennik Narodowy — propozycje redesignu</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+ :root{--red:#c8102e;--ink:#16181d;--muted:#6b7280;--line:#e6e6e3;--bg:#faf9f7}
+ *{box-sizing:border-box;margin:0;padding:0}
+ body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+ header{padding:42px 20px 24px;text-align:center;border-bottom:1px solid var(--line);background:#fff}
+ .brand{font-family:"Newsreader",serif;font-size:32px;font-weight:700}.brand b{color:var(--red)}
+ .tag{color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-size:12px;margin-top:6px}
+ .intro{max-width:820px;margin:16px auto 0;color:#3a3d44;line-height:1.7}
+ h2.grp{max-width:1160px;margin:32px auto 4px;padding:0 20px;font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+ main{max-width:1160px;margin:0 auto;padding:8px 20px 12px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+ .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;text-decoration:none;color:inherit}
+ .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.10)}
+ .thumb{height:110px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;letter-spacing:.05em;color:#fff}
+ .body{padding:14px 16px 18px}.body .kind{font-size:11px;color:var(--red);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+ .body h3{margin:3px 0 4px;font-size:16px}.body p{color:#4b4f57;font-size:12.5px;line-height:1.5}.go{margin-top:10px;display:inline-block;font-weight:600;color:var(--red);font-size:13px}
+ .v2{background:linear-gradient(135deg,#efe9dc,#a5122a)}.v3{background:linear-gradient(135deg,#09090b,#c9a227)}
+ .v4{background:linear-gradient(135deg,#1d4ed8,#12233f)}.v5{background:linear-gradient(135deg,#7c3aed,#0d0d14)}
+ .v6{background:linear-gradient(135deg,#ea580c,#7c2d12)}.v7{background:linear-gradient(135deg,#0b3d91,#111)}
+ .v8{background:linear-gradient(135deg,#0d9488,#0f2440)}.v9{background:linear-gradient(135deg,#7c1f33,#231f22)}
+ .v10{background:linear-gradient(135deg,#c8102e,#7c3aed)}
+ footer{text-align:center;color:var(--muted);font-size:13px;padding:22px;border-top:1px solid var(--line);margin-top:24px}
+</style></head>
+<body>
+<header><div class="brand"><b>Dziennik</b> Narodowy</div><div class="tag">Prawda • Naród • Tradycja</div>
+<p class="intro"><b>9 różnych konstrukcji</b> strony głównej na prawdziwych artykułach. Każda ma tryb jasny/ciemny (przełącznik w prawym górnym rogu) i widok artykułu (kliknij tekst) z reklamami i cytatami.</p></header>
+
+<h2 class="grp">Ze sliderem głównych (scoring potencjału)</h2>
+<main><div class="grid">
+ <a class="card" href="v2.html"><div class="thumb v2">DZIENNIK</div><div class="body"><div class="kind">v2 · Klasyczny magazyn</div><h3>Broadsheet</h3><p>Papier + czerwień, serif, kapitaliki, listy z liniami. Tradycyjny dziennik.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v3.html"><div class="thumb v3">PREMIUM</div><div class="body"><div class="kind">v3 · Kinowy premium</div><h3>Dark + złoto</h3><p>Czerń i złoto, duże bloki naprzemienne, dostojny serif. Immersyjnie.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v4.html"><div class="thumb v4">PORTAL</div><div class="body"><div class="kind">v4 · Portal informacyjny</div><h3>Sidebar + błękit</h3><p>Granat/błękit, sans, stały sidebar, kolorowe paski kart, gęsto.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v5.html"><div class="thumb v5">TURBO</div><div class="body"><div class="kind">v5 · Turbo / designerska</div><h3>Bento + fiolet</h3><p>Grafit i fiolet, bento grid, zaokrąglenia, pill-tagi. Dla młodych.</p><span class="go">Otwórz →</span></div></a>
+</div>
+
+<h2 class="grp">Nowe konstrukcje (inne architektury)</h2>
+<div class="grid">
+ <a class="card" href="v6.html"><div class="thumb v6">STRUMIEŃ</div><div class="body"><div class="kind">v6 · River / Strumień</div><h3>Jednokolumnowy feed</h3><p>Chronologiczny strumień „Co się stało", bez siatki. Styl Axios.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v7.html"><div class="thumb v7">AGREGATOR</div><div class="body"><div class="kind">v7 · Dense / Agregator</div><h3>3 kolumny linków</h3><p>Zero zdjęć, gęste nagłówki, hierarchia rozmiarem. Styl Drudge.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v8.html"><div class="thumb v8">DASHBOARD</div><div class="body"><div class="kind">v8 · Dashboard / Zakładki</div><h3>Taby przełączające</h3><p>Pasek zakładek filtruje działy bez przeładowania + sidebar. Styl BBC.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v9.html"><div class="thumb v9">MAGAZYN</div><div class="body"><div class="kind">v9 · Editorial / Magazyn</div><h3>Cover + spis treści</h3><p>Okładkowy cover, logika „wydania", Playfair, kremowy. Styl Economist.</p><span class="go">Otwórz →</span></div></a>
+ <a class="card" href="v10.html"><div class="thumb v10">KANAŁY</div><div class="body"><div class="kind">v10 · Channels / Kanały</div><h3>Pasy-kanały</h3><p>Poziome kanały, każdy z własną siatką + kolorowy border. Styl Apple News.</p><span class="go">Otwórz →</span></div></a>
+</div></main>
+<footer>Dziennik Narodowy © 2026 — materiały robocze redesignu · 9 konstrukcji do porównania</footer>
+</body></html>
