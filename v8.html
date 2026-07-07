@@ -80,6 +80,14 @@ nav.cats a{padding:4px 0;border-bottom:2px solid transparent}nav.cats a:hover{co
 .nw-item{display:block;padding:9px 0;border-top:1px solid var(--bsub);cursor:pointer}.nw-item:first-child{border-top:0}
 .nw-item time{display:block;font-size:11.5px;color:var(--tm);font-variant-numeric:tabular-nums;margin-bottom:2px}
 .nw-item span{font-size:14px;font-weight:600;line-height:1.3}.nw-item:hover span{color:var(--red)}
+/* sekcja Wydarzenia — jedno duże zdjęcie z najważniejszym wydarzeniem (jak na oryginale) */
+.lead-hero{position:relative;overflow:hidden;border-radius:var(--rad);cursor:pointer;aspect-ratio:16/7;margin-bottom:22px}
+.lead-hero>img,.lead-hero>.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.lead-hero:hover>img{transform:scale(1.03)}
+.lead-hero .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,.08) 66%,transparent)}
+.lead-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 28px;color:#fff;max-width:840px}
+.lead-cap h2{color:#fff;font-size:clamp(1.4rem,2.6vw,2.15rem);margin:6px 0 6px;line-height:1.14}
+.lead-cap p{color:rgba(255,255,255,.86);font-size:14.5px;max-width:620px}
 @media(max-width:900px){.hero-cls{grid-template-columns:1fr}}
 /* cards */
 .card{cursor:pointer;background:var(--bg)}
